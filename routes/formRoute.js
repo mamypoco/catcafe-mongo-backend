@@ -2,19 +2,19 @@ const express = require("express");
 const router = express.Router();
 const Form = require("../models/formModel");
 
-router.route("/contactus/").post((req, res) => {
+router.route("/contactus").post((req, res) => {
    const firstName = req.body.firstName;
    const lastName = req.body.lastName;
    const email = req.body.email;
    const newsLetter = req.body.newsLetter;
-   const tel = req.body.tel;
+   const phone = req.body.phone;
    const feedback = req.body.feedback;
    const newForm = new Form({
       firstName,
       lastName,
       email,
       newsLetter,
-      tel,
+      phone,
       feedback,
    });
    newForm.save();

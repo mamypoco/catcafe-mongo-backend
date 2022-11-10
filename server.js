@@ -9,7 +9,7 @@ app.use(express.json());
 
 //connet to mongoose
 mongoose.connect(
-   "mongodb+srv://munchkin:zBphnmKEdK4iCArT@cluster0.iixkejd.mongodb.net/catcafeDB"
+   "mongodb+srv://munchkin:<blank>@cluster0.iixkejd.mongodb.net/catcafeDB"
 );
 
 //require route
